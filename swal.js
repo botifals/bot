@@ -40,7 +40,7 @@ api_token = takeCookie('api_token').split(',')
 if(api_token == '') window.location.replace('/login')
 cookie_array[_a] = api_token[_a]
 api_tokens = api_token[_a]
-wx = new WebSocket('wss://ws.binaryws.com/websockets/v3?app_id=20701')
+wx = new WebSocket('wss://ws.binaryws.com/websockets/v3?app_id=19016')
 wx.onopen = function(){
   this.send(JSON.stringify({authorize: api_tokens}))
 }
@@ -60,7 +60,7 @@ wx.onmessage = function(msg){
 }
 function add(){
   tokens = $('#add_token_input').val()
-  wsx = new WebSocket('wss://ws.binaryws.com/websockets/v3?app_id=20701')
+  wsx = new WebSocket('wss://ws.binaryws.com/websockets/v3?app_id=19016')
   wsx.onopen = function(){
     this.send(JSON.stringify({authorize: tokens}))
   }

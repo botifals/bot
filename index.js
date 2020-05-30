@@ -37,7 +37,7 @@ $('#login').on('click', function () {
   token = document.getElementById('token').value
   if (token !== '') {
     var loading = $.toast({ heading: 'Connecting...', position: 'top-right', });
-    ws = new WebSocket('wss://ws.binaryws.com/websockets/v3?app_id=20701')
+    ws = new WebSocket('wss://ws.binaryws.com/websockets/v3?app_id=19016')
     ws.onopen = function () {
       this.send(JSON.stringify({ authorize: token }))
     }

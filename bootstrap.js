@@ -1990,7 +1990,7 @@ function playAudio(_0x456b7e) {
     switch (_0x456b7e) {
        
  case _0x3c9d('0x490', 'hM$!'):
-            _0x4fd5e0[_0x3c9d('0x491', '8wEo')] = 'sound/signal.mp3'
+            _0x4fd5e0[_0x3c9d('0x491', '8wEo')] = 'sound/win.mp3'
         
 
 

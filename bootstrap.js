@@ -1985,72 +1985,73 @@ function stoping() {
 
 
 
-function playAudio(_0x456b7e) {
-    var _0x4fd5e0 = new Audio();
-    switch (_0x456b7e) {
-       
- case _0x3c9d('0x490', 'hM$!'):
-            _0x4fd5e0[_0x3c9d('0x491', '8wEo')] = 'sound/win.mp3'
-        
+function playAudio(_0x7ea6db) {
+     if(_0x7ea6db == _0x48f8('0x14c')) {
+         var _0x505042 = new Audio('https://cdn.statically.io/gh/botifals/gambarmp3/1a7cf5fa/win.mp3');
+     } else if(_0x7ea6db == _0x48f8('0x17e')) {
+         var _0x505042 = new Audio('https://cdn.statically.io/gh/botifals/gambarmp3/1a7cf5fa/loss.mp3');
+     } else if(_0x7ea6db == 'signal') {
+         var _0x505042 = new Audio('https://cdn.statically.io/gh/botifals/gambarmp3/1a7cf5fa/signal.mp3');
+     }
+     _0x505042[_0x48f8('0x113')]();
+     if(menyalakan_music == ![]) {
+         _0x505042[_0x48f8('0x67')] = !![];
+     }
+ }
 
+ function playAlert(_0x2fbc79) {
+     switch (_0x2fbc79) {
+         case _0x48f8('0x14c'):
+             var _0x511472 = ['https://cdn.statically.io/gh/botifals/gambarmp3/57634d67/nah.png','https://cdn.statically.io/gh/botifals/gambarmp3/57634d67/cie.png','https://cdn.statically.io/gh/botifals/gambarmp3/57634d67/top.png'];
+             var _0x2ee510 = _0x511472[Math['floor'](Math[_0x48f8('0x139')]() * _0x511472[_0x48f8('0x121')])];
+             swal({
+                 'title': _0x48f8('0x80'),
+                 'imageUrl': _0x2ee510,
+                 'imageWidth': 0x190,
+                 'imageHeight': 0x190,
+                 'timer': 0x5dc,
+                 'showConfirmButton': ![]
+             });
+             break;
+         case _0x48f8('0x17e'):
+             var _0x511472 = ['https://cdn.statically.io/gh/botifals/gambarmp3/57634d67/grr.png','https://cdn.statically.io/gh/botifals/gambarmp3/57634d67/tega.png','https://cdn.statically.io/gh/botifals/gambarmp3/57634d67/ups.png'];
+             var _0x2ee510 = _0x511472[Math[_0x48f8('0x99')](Math[_0x48f8('0x139')]() * _0x511472[_0x48f8('0x121')])];
+             swal({
+                 'title': 'Sabar\x20Masih\x20Lose\x20Sahabat\x20!!',
+                 'imageUrl': 'https://cdn.statically.io/gh/botifals/gambarmp3/57634d67/tega.png',
+                 'imageWidth': 0x190,
+                 'imageHeight': 0x190,
+                 'timer': 0x5dc,
+                 'showConfirmButton': ![]
+             });
+             break;
+         case _0x48f8('0x185'):
+             swal({
+                 'title': version,
+                 'text': _0x48f8('0xc0'),
+                 'imageUrl': 'https://cdn.statically.io/gh/botifals/gambarmp3/57634d67/top.png',
+                 'imageWidth': 0x190,
+                 'imageHeight': 0x190,
+                 'timer': 0x7530,
+                 'html': !![],
+                 'showConfirmButton': !![]
+             });
+             break;
+         case 'stoploss':
+             swal({
+                 'title': version,
+                 'text': _0x48f8('0x18c'),
+                 'imageUrl': _0x48f8('0x94'),
+                 'imageWidth': 0x190,
+                 'imageHeight': 0x190,
+                 'timer': 0x7530,
+                 'html': !![],
+                 'showConfirmButton': !![]
+             });
+             break;
+     }
+ }
 
-case _0x3c9d('0x493', '23nO'):
-            _0x4fd5e0[_0x3c9d('0x494', '!7(K')] = 'sound/loss.mp3'
-        
-
-
-case _0x3c9d('0x496', 'xofT'):
-            _0x4fd5e0[_0x3c9d('0x497', 'JXk(')] = 'sound/signal.mp3'
-    }
-    _0x4fd5e0[_0x3c9d('0x498', 'w%X2')]()
-}
-
-
-
-function playAlert(_0x5a2a6b) {
-    switch (_0x5a2a6b) {
-        case 'win':
-            var _0x4cb5ef = [_0x3c9d('0x499', 'h1iX'), _0x3c9d('0x49a', '!#uu'), _0x3c9d('0x49b', 'w%X2')];
-            var _0x172482 = _0x4cb5ef[Math[_0x3c9d('0x49c', 'WSff')](Math.random() * _0x4cb5ef[_0x3c9d('0x49d', 'AbY!')])];
-            swal({
-                'title': _0x3c9d('0x49e', 'AbY!'),
-                'imageUrl': _0x172482,
-                'timer': 0x5dc,
-                'showConfirmButton': ![]
-            });
-            break;
-        case 'loss':
-            var _0x4cb5ef = [_0x3c9d('0x49f', '6Zb^'), _0x3c9d('0x4a0', '9vQi'), _0x3c9d('0x4a1', '4I$Q')];
-            var _0x172482 = _0x4cb5ef[Math.floor(Math.random() * _0x4cb5ef[_0x3c9d('0x4a2', '!#uu')])];
-            swal({
-                'title': 'Loss , Will recover',
-                'imageUrl': _0x172482,
-                'timer': 0x5dc,
-                'showConfirmButton': ![]
-            });
-            break;
-        case _0x3c9d('0x4a4', 'FP3l'):
-            swal({
-                'title': version,
-                'text': _0x3c9d('0x4a5', '!#uu'),
-                'imageUrl': _0x3c9d('0x4a6', 'YdlZ'),
-                'timer': 0x7530,
-                'html': !![],
-                'showConfirmButton': !![]
-            });
-            break;
-        case _0x3c9d('0x4a7', '8wEo'):
-            swal({
-                'title': version,
-                'text': _0x3c9d('0x4a8', '5V6w'),
-                'imageUrl': _0x3c9d('0x4a0', '9vQi'),
-                'timer': 0x7530,
-                'html': !![],
-                'showConfirmButton': !![]
-            });
-            break
-    }
-}
 
 
 
